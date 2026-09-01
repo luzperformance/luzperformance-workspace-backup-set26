@@ -25,3 +25,9 @@ starter-kit-hermes-v2.5.7/
 *Whisper*
 faster-whisper*
 .cache/
+
+# OAuth credentials and operational state
+google_client_secret.json
+google_oauth_pending.json
+Luzperformance/new-leads/google_token.json
+Luzperformance/new-leads/last_notified_row.json

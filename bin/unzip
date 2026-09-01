@@ -1,0 +1,54 @@
+#!/usr/bin/env python3
+import argparse
+import os
+import sys
+import zipfile
+from pathlib import Path
+
+
+def main():
+    parser = argparse.ArgumentParser(
+        prog='unzip',
+        add_help=True,
+        description='Minimal unzip-compatible extractor implemented with Python zipfile.'
+    )
+    parser.add_argument('-o', '--overwrite', action='store_true', help='overwrite existing files')
+    parser.add_argument('-d', '--directory', default='.', help='extract to directory')
+    parser.add_argument('archive', help='zip archive to extract')
+    args = parser.parse_args()
+
+    archive = Path(args.archive)
+    target = Path(args.directory)
+    target.mkdir(parents=True, exist_ok=True)
+
+    if not archive.exists():
+        print(f"unzip: cannot find or open {archive}", file=sys.stderr)
+        return 9
+
+    try:
+        with zipfile.ZipFile(archive) as zf:
+            for info in zf.infolist():
+                out_path = target / info.filename
+                if info.is_dir():
+                    out_path.mkdir(parents=True, exist_ok=True)
+                    continue
+                out_path.parent.mkdir(parents=True, exist_ok=True)
+                if out_path.exists() and not args.overwrite:
+                    continue
+                with zf.open(info) as src, open(out_path, 'wb') as dst:
+                    dst.write(src.read())
+                # preserve executable bit if present
+                perm = info.external_attr >> 16
+                if perm:
+                    try:
+                        os.chmod(out_path, perm)
+                    except PermissionError:
+                        pass
+        return 0
+    except zipfile.BadZipFile:
+        print(f"unzip: cannot process {archive}: not a zip file or archive is corrupt", file=sys.stderr)
+        return 2
+
+
+if __name__ == '__main__':
+    raise SystemExit(main())

@@ -1,0 +1,146 @@
+{
+  "jobs": [
+    {
+      "id": "b8843a677d82",
+      "name": "Bom dia \u2014 amanh\u00e3 \u00e0s 05:00",
+      "prompt": "Envie \u00e0 Daniela somente esta mensagem, sem acrescentar explica\u00e7\u00f5es: \"Bom dia, Daniela! \ud83c\udf05\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-08-29T05:00:00-03:00",
+        "display": "once at 2026-08-29 05:00"
+      },
+      "schedule_display": "once at 2026-08-29 05:00",
+      "repeat": {
+        "times": 1,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "completed",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-28T01:27:00.266844+00:00",
+      "next_run_at": null,
+      "last_run_at": "2026-08-29T08:00:42.530747+00:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Cron job 'Bom dia \u2014 amanh\u00e3 \u00e0s 05:00' has no model configured (job.model=None, HERMES_MODEL='', config.yaml model.default missing or empty). Set a per-job model via `cronjob action=update job_id=b8843a677d82 model=<name>` or set a default with `hermes model <name>`.",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7831560002",
+        "chat_name": "Daniela Gomes",
+        "thread_id": null,
+        "user_id": "7831560002"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "run_claim": null,
+      "fire_claim": null
+    },
+    {
+      "id": "fd0ce5d04538",
+      "name": "Bom dia \u2014 amanh\u00e3 \u00e0s 05:05",
+      "prompt": "Envie \u00e0 Daniela somente esta mensagem, sem acrescentar explica\u00e7\u00f5es: \"Bom dia novamente, Daniela! \u2600\ufe0f\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-08-29T05:05:00-03:00",
+        "display": "once at 2026-08-29 05:05"
+      },
+      "schedule_display": "once at 2026-08-29 05:05",
+      "repeat": {
+        "times": 1,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "completed",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-28T01:27:00.297449+00:00",
+      "next_run_at": null,
+      "last_run_at": "2026-08-29T08:05:42.477692+00:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Cron job 'Bom dia \u2014 amanh\u00e3 \u00e0s 05:05' has no model configured (job.model=None, HERMES_MODEL='', config.yaml model.default missing or empty). Set a per-job model via `cronjob action=update job_id=fd0ce5d04538 model=<name>` or set a default with `hermes model <name>`.",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7831560002",
+        "chat_name": "Daniela Gomes",
+        "thread_id": null,
+        "user_id": "7831560002"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "run_claim": null,
+      "fire_claim": null
+    },
+    {
+      "id": "671f257e2e40",
+      "name": "Bom dia \u2014 amanh\u00e3 \u00e0s 05:15",
+      "prompt": "Envie \u00e0 Daniela somente esta mensagem, sem acrescentar explica\u00e7\u00f5es: \"Passando para desejar uma manh\u00e3 maravilhosa, Daniela! \ud83c\udf3b\"",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": "openai-codex",
+      "model_snapshot": null,
+      "base_url": null,
+      "script": null,
+      "no_agent": false,
+      "context_from": null,
+      "schedule": {
+        "kind": "once",
+        "run_at": "2026-08-29T05:15:00-03:00",
+        "display": "once at 2026-08-29 05:15"
+      },
+      "schedule_display": "once at 2026-08-29 05:15",
+      "repeat": {
+        "times": 1,
+        "completed": 1
+      },
+      "enabled": false,
+      "state": "completed",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-08-28T01:27:00.333311+00:00",
+      "next_run_at": null,
+      "last_run_at": "2026-08-29T08:15:42.542734+00:00",
+      "last_status": "error",
+      "last_error": "RuntimeError: Cron job 'Bom dia \u2014 amanh\u00e3 \u00e0s 05:15' has no model configured (job.model=None, HERMES_MODEL='', config.yaml model.default missing or empty). Set a per-job model via `cronjob action=update job_id=671f257e2e40 model=<name>` or set a default with `hermes model <name>`.",
+      "last_delivery_error": null,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "7831560002",
+        "chat_name": "Daniela Gomes",
+        "thread_id": null,
+        "user_id": "7831560002"
+      },
+      "enabled_toolsets": null,
+      "workdir": null,
+      "run_claim": null,
+      "fire_claim": null
+    }
+  ],
+  "updated_at": "2026-08-29T08:15:42.543067+00:00"
+}

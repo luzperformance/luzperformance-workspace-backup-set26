@@ -1,0 +1,24 @@
+{
+  "rule_ids": [
+    "archive_extract"
+  ],
+  "severity": "MEDIUM",
+  "command_redacted": "chmod +x /data/bin/unzip && /data/bin/unzip -d /data/starter-kit-hermes-v2.5.7 /...",
+  "findings": [
+    {
+      "rule_id": "archive_extract",
+      "severity": "MEDIUM",
+      "title": "Archive extraction to sensitive path",
+      "description": "Archive command 'unzip' extracts to a potentially sensitive location",
+      "evidence": [
+        {
+          "type": "command_pattern",
+          "pattern": "archive extract",
+          "matched": "/data/bin/unzip -d /data/starter-kit-hermes-v2.5.7 /data/cache/documents/doc_5c8141eeb02a_starter-kit-hermes-v2.5.7.zip >/tmp/unzip_test.out 2>/tmp/unzip_test.err"
+        }
+      ],
+      "mitre_id": "T1560.001"
+    }
+  ],
+  "timestamp": "2026-08-31T19:12:52.436369793+00:00"
+}

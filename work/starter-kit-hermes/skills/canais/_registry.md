@@ -1,0 +1,3 @@
+# Skills: canais
+
+- `wizard-whatsapp`

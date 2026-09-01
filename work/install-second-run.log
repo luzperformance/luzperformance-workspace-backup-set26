@@ -1,0 +1,23 @@
+SKIP wizard-whatsapp (já existe)
+SKIP backup-workspace-github (já existe)
+SKIP commit-diario-workspace (já existe)
+SKIP cron-resume-wizards (já existe)
+SKIP seguranca-checklist (já existe)
+SKIP brainstorming (já existe)
+SKIP executing-plans (já existe)
+SKIP verification-before-completion (já existe)
+SKIP writing-plans (já existe)
+SKIP continuar-jornada (já existe)
+SKIP gera-log-jornada (já existe)
+SKIP onboarding-checklist (já existe)
+SKIP primeira-vitoria (já existe)
+SKIP wizard-agente (já existe)
+SKIP wizard-aluno (já existe)
+SKIP wizard-autonomia (já existe)
+SKIP wizard-conectar (já existe)
+SKIP wizard-whisper-quick (já existe)
+SKIP wizard-workspace (já existe)
+
+Instaladas: 0 · puladas: 19 · home: /data/work/hermes-test-home-1787345159
+Agora rode: hermes skills list && hermes skills check
+Abra uma nova sessão para carregar mudanças.

@@ -1,0 +1,16 @@
+{
+  "skill": "wizard-autonomia",
+  "version": "3.0.0",
+  "evals": [
+    {
+      "name": "fluxo-hermes-seguro",
+      "prompt": "Execute a skill wizard-autonomia em um ambiente Hermes já parcialmente configurado.",
+      "success_criteria": [
+        "preserva configuração existente",
+        "usa comandos Hermes válidos",
+        "não expõe segredos",
+        "valida antes de concluir"
+      ]
+    }
+  ]
+}

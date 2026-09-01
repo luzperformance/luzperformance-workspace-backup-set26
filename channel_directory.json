@@ -1,0 +1,37 @@
+{
+  "updated_at": "2026-09-01T11:13:55.316286",
+  "platforms": {
+    "telegram": [
+      {
+        "id": "8634563463",
+        "name": "Vinícius L",
+        "type": "dm",
+        "thread_id": null
+      },
+      {
+        "id": "-1004397623371:11",
+        "name": "LuzPerformance / topic 11",
+        "type": "group",
+        "thread_id": "11"
+      },
+      {
+        "id": "-1004397623371:13",
+        "name": "LuzPerformance / topic 13",
+        "type": "group",
+        "thread_id": "13"
+      },
+      {
+        "id": "-1004397623371:1",
+        "name": "LuzPerformance / topic 1",
+        "type": "group",
+        "thread_id": "1"
+      },
+      {
+        "id": "7831560002",
+        "name": "Daniela Gomes",
+        "type": "dm",
+        "thread_id": null
+      }
+    ]
+  }
+}

@@ -7,6 +7,10 @@
 - `drafts/` — peças em desenvolvimento.
   - `heygen/` — roteiros e instruções para o avatar/gêmeo digital.
 - `archive/` — versões preservadas e análises de materiais já concluídos.
+- `tone-of-voice/` — fonte obrigatória de voz para toda peça de conteúdo.
+  - `POSTING-GUIDE.md` — filtro operacional e checklist para todas as postagens.
+  - `GUIDE.md` — guia consolidado de tom de voz e regras por plataforma.
+  - `MAPA.md` — ordem de consulta, evidências e referências temáticas.
 
 ## Convenções
 

@@ -8,4 +8,4 @@ Vinícius sempre manda mensagens em português BR — responder sempre em pt-BR.
 §
 Mensagens do Vinícius podem chegar em inglês (transcrição automática do Telegram) — traduzir/interpretar como português BR. Ele fala pt-BR; às vezes usa ditado por voz que sai em inglês.
 §
-HeyGen: gêmeo digital; roteiro = bloco COLA ISTO + caption 3 linhas; look Roleta (close, fundo escuro, blazer); CTA consultoria/bio, nunca receita; sem tags TTS. Pasta masters: drive.google.com/drive/folders/1XBchmeeu8UE0ew2f8mF_aLs1T1j1JQiP?usp=sharing
+Conteúdo público deve seguir /data/content/tone-of-voice/POSTING-GUIDE.md e GUIDE.md; para afirmação clínica sensível, consultar evidências/referências da pasta. HeyGen: gêmeo digital; roteiro = COLA ISTO + caption 3 linhas; look Roleta (close, fundo escuro, blazer); CTA consultoria/bio, nunca receita ou tags TTS.

@@ -1,0 +1,22 @@
+model:
+  default: google/gemini-2.5-flash-lite
+  provider: openrouter
+  base_url: https://openrouter.ai/api/v1
+  api_mode: chat_completions
+onboarding:
+  seen:
+    busy_input_prompt: true
+_config_version: 39
+experimental:
+  unified_session_db: false
+mcp_servers:
+  hostinger-api:
+    command: hostinger-api-mcp
+    env:
+      HOSTINGER_API_TOKEN: ${HOSTINGER_API_TOKEN}
+approvals:
+  mode: 'off'
+  cron_mode: allow
+  single_query_mode: allow
+  mcp_reload_confirm: false
+  destructive_slash_confirm: false

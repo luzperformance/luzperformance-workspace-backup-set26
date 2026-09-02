@@ -1,5 +1,5 @@
 {
-  "updated_at": "2026-09-01T12:59:19.349059",
+  "updated_at": "2026-09-02T02:59:41.693636",
   "platforms": {
     "telegram": [
       {
@@ -7,6 +7,18 @@
         "name": "Vinícius L",
         "type": "dm",
         "thread_id": null
+      },
+      {
+        "id": "-1004397623371:75",
+        "name": "LuzPerformance / topic 75",
+        "type": "group",
+        "thread_id": "75"
+      },
+      {
+        "id": "-1004397623371:70",
+        "name": "LuzPerformance / topic 70",
+        "type": "group",
+        "thread_id": "70"
       },
       {
         "id": "-1004397623371:11",

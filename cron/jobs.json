@@ -173,7 +173,7 @@
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-09-01T11:16:25.957604+00:00",
-      "next_run_at": "2026-09-02T03:00:00+00:00",
+      "next_run_at": "2026-09-03T03:00:00+00:00",
       "last_run_at": null,
       "last_status": null,
       "last_error": null,
@@ -189,8 +189,63 @@
         "scope_id": null
       },
       "enabled_toolsets": null,
-      "workdir": null
+      "workdir": null,
+      "fire_claim": {
+        "at": "2026-09-02T03:00:54.873507+00:00",
+        "by": "48f1a203a3c8:41156:10ea1551b31a4b16a0215ea068c70996"
+      }
+    },
+    {
+      "id": "e77ddaea6108",
+      "name": "monitor-leads-novos",
+      "prompt": "Execute o monitor de novos leads. Entregue stdout somente quando houver um lead novo; stdout vazio não deve gerar mensagem.",
+      "skills": [],
+      "skill": null,
+      "model": null,
+      "provider": null,
+      "provider_snapshot": null,
+      "model_snapshot": null,
+      "base_url": null,
+      "script": "monitor_leads_novos.sh",
+      "no_agent": true,
+      "monitor_script": null,
+      "monitor_url": null,
+      "monitor_state": null,
+      "context_from": null,
+      "schedule": {
+        "kind": "interval",
+        "minutes": 15,
+        "display": "every 15m"
+      },
+      "schedule_display": "every 15m",
+      "repeat": {
+        "times": null,
+        "completed": 45
+      },
+      "enabled": true,
+      "state": "scheduled",
+      "paused_at": null,
+      "paused_reason": null,
+      "created_at": "2026-09-01T14:58:44.557190+00:00",
+      "next_run_at": "2026-09-02T03:12:56.444653+00:00",
+      "last_run_at": "2026-09-02T02:57:56.444653+00:00",
+      "last_status": "ok",
+      "last_error": null,
+      "last_delivery_error": null,
+      "failure_streak": 0,
+      "deliver": "origin",
+      "origin": {
+        "platform": "telegram",
+        "chat_id": "-1004397623371",
+        "chat_name": "LuzPerformance",
+        "thread_id": "75",
+        "user_id": "8634563463",
+        "scope_id": null
+      },
+      "enabled_toolsets": null,
+      "workdir": "/data/Luzperformance/new-leads",
+      "fire_claim": null
     }
   ],
-  "updated_at": "2026-09-01T11:16:25.973005+00:00"
+  "updated_at": "2026-09-02T03:00:54.873719+00:00"
 }

@@ -1,0 +1,24 @@
+[
+  {
+    "session_id": "proc_bab087c49fa5",
+    "command": "/opt/venv/bin/hermes gateway run",
+    "pid": 50034,
+    "pid_scope": "host",
+    "host_start_time": 322608767,
+    "systemd_unit": "",
+    "cwd": "/data/workspace",
+    "started_at": 1788380632.3888009,
+    "task_id": "session:20260819_150642_8bc47b",
+    "session_key": "20260819_150642_8bc47b",
+    "watcher_platform": "",
+    "watcher_chat_id": "",
+    "watcher_user_id": "",
+    "watcher_user_name": "",
+    "watcher_thread_id": "",
+    "watcher_message_id": "",
+    "watcher_interval": 0,
+    "parent_session_id": "",
+    "notify_on_complete": false,
+    "watch_patterns": []
+  }
+]

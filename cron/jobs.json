@@ -166,19 +166,19 @@
       "schedule_display": "0 3 * * *",
       "repeat": {
         "times": null,
-        "completed": 1
+        "completed": 2
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-09-01T11:16:25.957604+00:00",
-      "next_run_at": "2026-09-04T03:00:00+00:00",
-      "last_run_at": "2026-09-02T03:01:15.020193+00:00",
+      "next_run_at": "2026-09-05T03:00:00+00:00",
+      "last_run_at": "2026-09-03T03:00:14.473012+00:00",
       "last_status": "error",
-      "last_error": "RuntimeError: [drift_skip] Skipped to prevent unintended spend: global inference config drifted since this job was created (provider 'openrouter' -> 'openai-codex'; model 'google/gemini-2.5-flash-lite' -> 'gpt-5.6-terra'), and this job is unpinned. No inference call was made. To run on the new config, on the host running Hermes pin it explicitly: `hermes cron edit b382f8629108 --provider <provider> --model <model>` (or pin the original values to keep them). This alert is sent once; the job stays skipped until the config is pinned or restored. See #44585.",
+      "last_error": "RuntimeError: [drift_skip:silent] Skipped to prevent unintended spend: global inference config drifted since this job was created (provider 'openrouter' -> 'openai-codex'; model 'google/gemini-2.5-flash-lite' -> 'gpt-5.6-terra'), and this job is unpinned. No inference call was made. To run on the new config, on the host running Hermes pin it explicitly: `hermes cron edit b382f8629108 --provider <provider> --model <model>` (or pin the original values to keep them). This alert is sent once; the job stays skipped until the config is pinned or restored. See #44585.",
       "last_delivery_error": null,
-      "failure_streak": 1,
+      "failure_streak": 2,
       "deliver": "local",
       "origin": {
         "platform": "telegram",
@@ -191,8 +191,8 @@
       "enabled_toolsets": null,
       "workdir": null,
       "fire_claim": {
-        "at": "2026-09-03T03:00:09.895214+00:00",
-        "by": "48f1a203a3c8:50034:59b0e3e77d454454a5869545be51e306"
+        "at": "2026-09-04T03:00:17.604449+00:00",
+        "by": "48f1a203a3c8:50034:ccb0f7245a934e4d81c21b94f6d87953"
       },
       "drift_alerted": true
     },
@@ -221,15 +221,15 @@
       "schedule_display": "every 15m",
       "repeat": {
         "times": null,
-        "completed": 132
+        "completed": 222
       },
       "enabled": true,
       "state": "scheduled",
       "paused_at": null,
       "paused_reason": null,
       "created_at": "2026-09-01T14:58:44.557190+00:00",
-      "next_run_at": "2026-09-03T03:03:11.619175+00:00",
-      "last_run_at": "2026-09-03T02:48:11.619175+00:00",
+      "next_run_at": "2026-09-04T03:03:19.225316+00:00",
+      "last_run_at": "2026-09-04T02:48:19.225316+00:00",
       "last_status": "ok",
       "last_error": null,
       "last_delivery_error": null,
@@ -248,5 +248,5 @@
       "fire_claim": null
     }
   ],
-  "updated_at": "2026-09-03T03:00:09.895431+00:00"
+  "updated_at": "2026-09-04T03:00:17.604639+00:00"
 }

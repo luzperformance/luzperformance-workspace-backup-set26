@@ -1,12 +1,30 @@
 {
-  "updated_at": "2026-09-03T02:59:29.558179",
+  "updated_at": "2026-09-04T02:59:37.991700",
   "platforms": {
     "telegram": [
+      {
+        "id": "-1004397623371:75",
+        "name": "LuzPerformance / topic 75",
+        "type": "group",
+        "thread_id": "75"
+      },
+      {
+        "id": "8634563463",
+        "name": "Vinícius L",
+        "type": "dm",
+        "thread_id": null
+      },
       {
         "id": "-1004397623371:136",
         "name": "LuzPerformance / topic 136",
         "type": "group",
         "thread_id": "136"
+      },
+      {
+        "id": "-1004397623371:1",
+        "name": "LuzPerformance / topic 1",
+        "type": "group",
+        "thread_id": "1"
       },
       {
         "id": "-1004397623371:114",
@@ -19,18 +37,6 @@
         "name": "LuzPerformance / topic 160",
         "type": "group",
         "thread_id": "160"
-      },
-      {
-        "id": "8634563463",
-        "name": "Vinícius L",
-        "type": "dm",
-        "thread_id": null
-      },
-      {
-        "id": "-1004397623371:75",
-        "name": "LuzPerformance / topic 75",
-        "type": "group",
-        "thread_id": "75"
       },
       {
         "id": "-1004397623371:11",
@@ -49,12 +55,6 @@
         "name": "LuzPerformance / topic 13",
         "type": "group",
         "thread_id": "13"
-      },
-      {
-        "id": "-1004397623371:1",
-        "name": "LuzPerformance / topic 1",
-        "type": "group",
-        "thread_id": "1"
       },
       {
         "id": "7831560002",

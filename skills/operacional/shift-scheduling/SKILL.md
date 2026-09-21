@@ -1,7 +1,7 @@
 ---
 name: shift-scheduling
 description: Create verified shift schedules as HTML calendars.
-version: 0.1.0
+version: 0.2.0
 author: Dr. Vinícius Luzardi, Hermes Agent
 license: MIT
 platforms: [linux, macos, windows]
@@ -34,13 +34,26 @@ Não use para agenda compartilhada, convites ou Google Calendar sem autorizaçã
 
 Assuma o ano corrente apenas se o contexto mensal já o deixar inequívoco. Pergunte uma vez se a data ou o ano mudar materialmente a escala.
 
+Contexto fixo desta operação:
+
+- Pasta: `/data/workspace/Luzperformanbce/Plantões/` — `agenda.md` é o registro mestre; cada mês tem `escala-<mes>-<ano>.html`.
+- Meses anteriores já têm HTML pronto: use o último como referência de design em vez de recriar o layout.
+
+## Padrão recorrente e prévia do mês seguinte
+
+O padrão que o Dr. Vinícius dita é "todos os fins de semana (sábado e domingo) das 07h às 19h, mais duas terças-feiras das 13h às 19h". Quando ele pedir um mês sem informar todas as datas, monte a **prévia** espelhando o mês anterior — fins de semana completos + 1ª e 3ª terças — e entregue dizendo explicitamente o que foi assumido.
+
+- Prévia não entra no registro mestre nem no Google Calendar: só escala confirmada entra.
+- Registre a prévia no arquivo mensal de `decisions/` marcada como pendente de confirmação, para o próximo contexto saber o que falta.
+- Ao montar a prévia, calcule os dias da semana com uma ferramenta; quando o mês começa no domingo, o calendário não tem células vazias no início.
+
 ## Procedimento
 
 1. **Consolidar entradas.** Extraia cada data e horário informados, incluindo mensagens anteriores da mesma sequência. Converta para `DD/MM/AAAA`, valide o dia da semana com uma ferramenta e ordene cronologicamente.
    - Não duplique um plantão que apareça duas vezes com os mesmos dados.
    - Se houver conflito real no mesmo dia, mantenha ambos somente quando o usuário indicou explicitamente dois turnos; caso contrário, peça correção.
 
-2. **Separar o período.** Calcule carga e métricas somente dentro do mês da escala. Plantões informados para o mês seguinte entram em um bloco de continuação, sem contaminar os totais do mês.
+2. **Separar o período.** Calcule carga e métricas somente dentro do mês da escala. Plantões informados para o mês seguinte entram em um bloco de continuação, sem contaminar os totais do mês. Quando a escala do mês seguinte for montada, esse mesmo plantão passa a contar na carga do novo mês e sai do bloco de continuação do mês anterior.
 
 3. **Atualizar o registro mestre.** Registre cada plantão no arquivo de agenda da pasta de Plantões, com data completa, horário, rótulo e status do calendário. Preserve registros antigos e mantenha ordem cronológica.
 
@@ -64,8 +77,11 @@ Assuma o ano corrente apenas se o contexto mensal já o deixar inequívoco. Perg
 
 - Não criar ou alterar Google Calendar só porque a escala foi registrada localmente. É ação externa e requer confirmação; se não houver autenticação, mantenha o status como pendente.
 - Não entregar um caminho local quando o usuário pediu download: anexe o HTML.
+- Não dizer "criado" antes de conferir o caminho real com `ls -la`: a resposta de sucesso da ferramenta de escrita não prova que o arquivo ou a pasta estão no disco.
 - Não deixar uma data de outro mês escondida no calendário do mês atual; apresente-a como continuação separada.
 - Não reutilizar avisos clínicos, protocolos de medicação ou outras seções do HTML referência que não foram solicitadas para a escala.
+- Antes de afirmar que nada foi criado, liste a pasta de Plantões: um turno interrompido pode ter gravado os arquivos antes de parar. Não conclua o estado do trabalho pelo histórico do chat nem por processos em execução — abra o diretório de destino e confira.
+- Se o arquivo do mês já existe e confere com os dados informados, valide e entregue. Não regenere por cima do mesmo conteúdo nem apresente como recém-criado algo que já estava no disco; se uma resposta anterior afirmou que nada existia, corrija a afirmação antes de seguir.
 
 ## Verificação
 

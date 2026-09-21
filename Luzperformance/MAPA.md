@@ -7,6 +7,7 @@
 - `dr-luiz/` — ativos e materiais do projeto Dr. Luiz.
 - `new-leads/` — automações, validações e materiais do fluxo de novos leads.
 - `general-schedule/` — materiais e referências de apoio à agenda geral.
+- `AvatarHype/` — ensinamentos, materiais e aplicações práticas do curso AvatarGen.
 
 ## Regra
 

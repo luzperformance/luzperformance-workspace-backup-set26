@@ -22,6 +22,7 @@
 | `decisions/` | Decisões duráveis, organizadas por mês | `decisions/MAPA.md` |
 | `projects/` | Projetos ativos; cada novo projeto começa com `PRD.md` | `projects/MAPA.md` |
 | `Luzperformance/` | Frentes operacionais da Luz Performance | `Luzperformance/MAPA.md` |
+| `Luzperformance/AvatarHype/` | Conhecimentos e aplicações do curso AvatarGen | `Luzperformance/AvatarHype/MAPA.md` |
 | `archive/` | Histórico recuperável de arquivos substituídos | `archive/MAPA.md` |
 
 ## Inteligência operacional

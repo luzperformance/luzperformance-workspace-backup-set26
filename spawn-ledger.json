@@ -1,0 +1,28 @@
+[
+  {
+    "pid": 40,
+    "create_time": 1789913467.7,
+    "purpose": "mcp-helper",
+    "install": "ffad2f554395",
+    "spawner_pid": 12,
+    "spawner_create": 1789913461.24,
+    "registered_at": 1789913468.4282858,
+    "argv": "node /usr/local/bin/hostinger-api-mcp",
+    "host": "",
+    "port": null,
+    "profile": ""
+  },
+  {
+    "pid": 356,
+    "create_time": 1789913525.93,
+    "purpose": "mcp-helper",
+    "install": "ffad2f554395",
+    "spawner_pid": 13,
+    "spawner_create": 1789913461.24,
+    "registered_at": 1789913526.6515203,
+    "argv": "node /usr/local/bin/hostinger-api-mcp",
+    "host": "",
+    "port": null,
+    "profile": ""
+  }
+]

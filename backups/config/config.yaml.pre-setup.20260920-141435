@@ -1,0 +1,48 @@
+model:
+  default: gpt-5.6-terra
+  provider: openai-codex
+agent:
+  reasoning_effort: max
+stt:
+  language: pt
+  openai:
+    model: gpt-4o-transcribe
+  provider: openai
+memory:
+  provider: mem0
+approvals:
+  mode: 'off'
+  cron_mode: allow
+  single_query_mode: allow
+  mcp_reload_confirm: false
+  destructive_slash_confirm: false
+gateway:
+  platforms:
+    telegram:
+      extra:
+        allow_from:
+        - '*'
+        - '7831560002'
+        allow_admin_from:
+        - '*'
+        - '7831560002'
+onboarding:
+  seen:
+    busy_input_prompt: true
+_config_version: 39
+experimental:
+  unified_session_db: false
+mcp_servers:
+  hostinger-api:
+    command: hostinger-api-mcp
+    env:
+      HOSTINGER_API_TOKEN: FhGyPJZ76MCz9sc5IfJvZhRItb02ECCtHpr0Br6w9ec71136
+  luz_crm:
+    url: https://mcp.transformandoemsaude.com/mcp
+    auth: oauth
+    oauth:
+      client_id: luz-crm-codex
+      token_endpoint_auth_method: none
+      scope: espocrm
+      redirect_port: 4321
+      redirect_uri: http://127.0.0.1:4321/callback

@@ -56,4 +56,24 @@ Origem: Instagram
 - A comparação simples entre última e penúltima linha não avisa um novo lead se ele for idêntico ao anterior; use estado por ID/hash quando essa possibilidade importar.
 - Não exponha tokens OAuth ou conteúdo integral da planilha nos logs.
 - Uma planilha sem linhas de dados não deve gerar aviso nem erro ruidoso.
-- Para cron `no_agent`, o script precisa ficar em `~/.hermes/scripts/` e ser referenciado pelo nome relativo. Use `every 15m` (não `15m`) para recorrência e leia o job criado de volta para confirmar `repeat: forever` e o destino.
+- Para cron `no_agent`, o script precisa ficar em `~/.hermes/scripts/` ou `/data/scripts/` e ser referenciado pelo nome relativo (ex: `monitor_leads_novos.sh`). O `workdir` define onde o script executa, não onde ele está salvo — pitfall comum: script existe no `workdir` mas o cron não acha porque só procura nos paths de scripts. Use `every 15m` (não `15m`) para recorrência e leia o job criado de volta para confirmar `repeat: forever`, `no_agent: true`, e `script` definido.
+- Após criar o cron `no_agent`, confirme que o job tem `script` definido e `no_agent: true`. O script deve estar em `~/.hermes/scripts/` ou `/data/scripts/` e ser executável (`chmod +x`).
+
+## Auditoria e recuperação de falhas
+
+Antes de concluir que “não há lead novo”, diferencie **silêncio saudável** de **falha silenciosa**:
+
+1. Leia o job e confirme `last_status`, `script`, `no_agent`, `workdir` e o próximo agendamento.
+2. Execute o script manualmente e preserve `stdout`, `stderr` e código de saída. `stdout` vazio + saída 0 significa que não houve novidade; saída não-zero exige diagnóstico antes de falar de leads.
+3. Para auditar sem alterar o estado de deduplicação, leia a última linha e compare com `last_notified_row.json`; não rode o comando de notificação só para inspecionar, pois ele pode gravar o estado.
+4. Em Google Sheets, `invalid_grant` significa que o refresh token expirou ou foi revogado. Gere uma nova URL de autorização com o fluxo OAuth já configurado, peça a URL completa de retorno em `localhost:1` e só então troque o token. Trocar modelo/LLM não corrige OAuth.
+
+## Watchdog de saúde do cron
+
+Para crons críticos como monitor de leads, crie um segundo cron `no_agent` que audita a saúde do principal a cada 30 min. Veja implementações de referência em `references/watchdog_example.py` e `references/watchdog_wrapper.sh`. Comportamento:
+
+- **Silencioso quando OK**: testa conectividade com a fonte de dados (ex: lê a planilha). Se funcionar, stdout vazio = nenhuma entrega.
+- **Acumula falhas**: salva contagem de falhas consecutivas em arquivo de estado JSON.
+- **Na 3ª falha seguida**: audita e tenta consertar automaticamente: verifica se o script existe nos paths corretos e recria se necessário; tenta renovar token OAuth expirado; checa dependências Python. Se conseguir consertar, zera o contador e segue silencioso.
+- **Se não conseguir consertar**: imprime no stdout a mensagem exata combinada com o usuário: "Não foi possível concertar o Cron". Pode incluir o último erro e as tentativas feitas em linhas seguintes. O cron entrega esse alerta no chat de origem.
+- **Estado**: salvo no diretório do projeto como `watchdog_state.json`. Reset manual: deletar o arquivo de estado.

@@ -10,7 +10,9 @@
 
 ## Estado atual
 
-Ainda sem projetos estruturados nesta pasta.
+- `autoridade-clinica/` — estratégia editorial para consolidar autoridade clínica da Luz Performance antes de escalar conversão.
+- `pgvector-mem0/` — infraestrutura de memória compartilhada com PostgreSQL + pgvector.
+- `segundo-cerebro-secretaria-luzperformance/` — kit e plano de implantação do perfil operacional independente da secretária.
 
 ## Atualizar este mapa quando
 

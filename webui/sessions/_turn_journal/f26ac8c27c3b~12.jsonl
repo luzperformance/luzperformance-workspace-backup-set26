@@ -1,0 +1,4 @@
+{"event":"submitted","stream_id":"a73ae0cd19eb44f9834d3608e9e334a5","role":"user","content":"restartei veja se pegou a chave","attachments":[],"workspace":"/data/workspace","model":"gpt-5.6-terra","model_provider":"openai-codex","created_at":1788556570.2964134,"version":1,"session_id":"f26ac8c27c3b","turn_id":"20260904T211610Z-6b740a0e36db"}
+{"event":"worker_started","created_at":1788556570.3013532,"stream_id":"a73ae0cd19eb44f9834d3608e9e334a5","turn_id":"20260904T211610Z-6b740a0e36db","version":1,"session_id":"f26ac8c27c3b"}
+{"event":"assistant_started","created_at":1788556589.1943674,"assistant_message_index":13,"stream_id":"a73ae0cd19eb44f9834d3608e9e334a5","turn_id":"20260904T211610Z-6b740a0e36db","version":1,"session_id":"f26ac8c27c3b"}
+{"event":"completed","created_at":1788556589.216858,"assistant_message_index":13,"stream_id":"a73ae0cd19eb44f9834d3608e9e334a5","turn_id":"20260904T211610Z-6b740a0e36db","version":1,"session_id":"f26ac8c27c3b","terminal":true}

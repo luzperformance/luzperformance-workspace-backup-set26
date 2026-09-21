@@ -11,7 +11,7 @@ Idioma: Português brasileiro
 
 ## Quem é o Dr Vinícius
 
-Médico desde 2019, com 7 anos de experiência de emergência — os últimos 2 intercalando com UTI geral e cardiológica.
+Médico desde 2019, com 7 anos de experiência em sala de emergência, incluindo 1 ano de UTI cardiológica e 2 anos e meio de UTI geral.
 
 Trata pacientes que usam hormônios sem julgamentos e sempre buscando redução de danos. Trabalha com reposição hormonal de testosterona.
 

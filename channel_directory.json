@@ -1,13 +1,7 @@
 {
-  "updated_at": "2026-09-04T02:59:37.991700",
+  "updated_at": "2026-09-21T18:08:53.525301",
   "platforms": {
     "telegram": [
-      {
-        "id": "-1004397623371:75",
-        "name": "LuzPerformance / topic 75",
-        "type": "group",
-        "thread_id": "75"
-      },
       {
         "id": "8634563463",
         "name": "Vinícius L",
@@ -15,10 +9,34 @@
         "thread_id": null
       },
       {
+        "id": "-1004397623371:75",
+        "name": "LuzPerformance / topic 75",
+        "type": "group",
+        "thread_id": "75"
+      },
+      {
+        "id": "-1004397623371:70",
+        "name": "LuzPerformance / topic 70",
+        "type": "group",
+        "thread_id": "70"
+      },
+      {
+        "id": "-1004397623371:11",
+        "name": "LuzPerformance / topic 11",
+        "type": "group",
+        "thread_id": "11"
+      },
+      {
         "id": "-1004397623371:136",
         "name": "LuzPerformance / topic 136",
         "type": "group",
         "thread_id": "136"
+      },
+      {
+        "id": "-1004397623371:467",
+        "name": "LuzPerformance / topic 467",
+        "type": "group",
+        "thread_id": "467"
       },
       {
         "id": "-1004397623371:1",
@@ -33,22 +51,28 @@
         "thread_id": "114"
       },
       {
+        "id": "-1004397623371:534",
+        "name": "LuzPerformance / topic 534",
+        "type": "group",
+        "thread_id": "534"
+      },
+      {
+        "id": "-1004397623371:320",
+        "name": "LuzPerformance / topic 320",
+        "type": "group",
+        "thread_id": "320"
+      },
+      {
+        "id": "-1004397623371:452",
+        "name": "LuzPerformance / topic 452",
+        "type": "group",
+        "thread_id": "452"
+      },
+      {
         "id": "-1004397623371:160",
         "name": "LuzPerformance / topic 160",
         "type": "group",
         "thread_id": "160"
-      },
-      {
-        "id": "-1004397623371:11",
-        "name": "LuzPerformance / topic 11",
-        "type": "group",
-        "thread_id": "11"
-      },
-      {
-        "id": "-1004397623371:70",
-        "name": "LuzPerformance / topic 70",
-        "type": "group",
-        "thread_id": "70"
       },
       {
         "id": "-1004397623371:13",

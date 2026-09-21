@@ -6,6 +6,7 @@
 
 - `drafts/` — peças em desenvolvimento.
   - `heygen/` — roteiros e instruções para o avatar/gêmeo digital.
+    - `assets/` — imagens e áudios de referência enviados para peças em produção.
 - `archive/` — versões preservadas e análises de materiais já concluídos.
 - `tone-of-voice/` — fonte obrigatória de voz para toda peça de conteúdo.
   - `POSTING-GUIDE.md` — filtro operacional e checklist para todas as postagens.

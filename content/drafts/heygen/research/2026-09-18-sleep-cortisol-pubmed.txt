@@ -1,0 +1,6 @@
+# Sleep and Circadian Regulation of Cortisol: A Short Review
+URL: https://pubmed.ncbi.nlm.nih.gov/35128146/
+
+## Abstract
+
+The central circadian pacemaker (CCP) located in the suprachiasmatic nucleus (SCN) of the hypothalamus drives the 24-hour pattern in cortisol, which functions as the main central synchronizing signal that coordinates peripheral clocks in organs that control whole body metabolism. A superimposed pulsatile pattern of cortisol allows rapid responses that fine tune the body's reaction to changes in the environment. In addition to coordinating metabolic processes to predictable environmental events, cortisol is the main catabolic signal which acts with testosterone, the quintessential male anabolic hormone, to maintain catabolic-anabolic homeostasis in men. Sleep restriction, when sufficiently substantial, increases late afternoon/early evening cortisol, but does not alter 24-hour cortisol; whereas even maximal acute circadian misalignment only slightly delays the cortisol rhythm. Prolonged circadian misalignment decreases overall cortisol exposure. The implications of these regulatory changes on health and disease requires further evaluation.

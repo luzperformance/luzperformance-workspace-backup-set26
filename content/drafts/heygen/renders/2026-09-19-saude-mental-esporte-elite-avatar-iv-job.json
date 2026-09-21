@@ -1,0 +1,15 @@
+{
+  "status": "completed",
+  "job_id": "gen-vid-1789840582-MX76XzNA82ZAcGnPZozd",
+  "model": "heygen/avatar-iv",
+  "resolution": "1080p",
+  "aspect_ratio": "9:16",
+  "requested_duration_seconds": 65,
+  "audio_seconds": 64.56,
+  "render_path": "/data/content/drafts/heygen/renders/2026-09-19-saude-mental-esporte-elite-avatar-iv.mp4",
+  "usage": {
+    "cost": 3.228,
+    "is_byok": false
+  },
+  "video_bytes": 33661184
+}

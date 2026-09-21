@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="pt-BR"><head><meta charset="UTF-8"><meta name="viewport" content="width=device-width, initial-scale=1.0"><title>Escala de Plantões — Novembro 2026</title>
+<style>
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&family=Orbitron:wght@700;900&display=swap');
+:root{--navy:#0d1f33;--navy-mid:#142a42;--navy-light:#1a3a5c;--gold:#c9a44a;--gold-light:#d4b55a;--gold-grad-top:#f3d077;--gold-grad-bot:#8a6d29;--white:#ffffff;--gray:#e0e0e0;--gray-dark:#a0a0a0;--border:rgba(201,164,74,.25)}
+*{box-sizing:border-box;margin:0;padding:0}
+body{font-family:'Montserrat',sans-serif;background:var(--navy);color:var(--white);min-height:100vh;padding-bottom:60px}
+header{background:linear-gradient(180deg,#0a1420 0%,var(--navy) 100%);border-bottom:1px solid var(--border);padding:32px 24px 28px;text-align:center;position:relative;overflow:hidden}
+header:before{content:'';position:absolute;inset:0;background-image:repeating-linear-gradient(0deg,transparent,transparent 39px,rgba(201,164,74,.04) 39px,rgba(201,164,74,.04) 40px),repeating-linear-gradient(90deg,transparent,transparent 39px,rgba(201,164,74,.04) 39px,rgba(201,164,74,.04) 40px)}
+.header-tag,h1,header p{position:relative}
+.header-tag{font-size:10px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold);margin-bottom:10px;opacity:.8}
+h1{font-family:'Orbitron',sans-serif;font-size:clamp(20px,5vw,32px);font-weight:900;background:linear-gradient(180deg,var(--gold-grad-top),var(--gold),var(--gold-grad-bot));-webkit-background-clip:text;-webkit-text-fill-color:transparent;background-clip:text;line-height:1.2;margin-bottom:8px}
+header p{color:var(--gray-dark);font-size:13px;letter-spacing:.05em}
+main{max-width:900px;margin:0 auto;padding:32px 16px 0}
+.stat-row{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.stat-box{flex:1;min-width:150px;background:var(--navy-mid);border:1px solid var(--border);border-radius:10px;padding:14px 16px;text-align:center}
+.stat-num{font-family:'Orbitron',monospace;font-size:22px;font-weight:900;color:var(--gold);line-height:1}
+.stat-label{font-size:10px;color:var(--gray-dark);margin-top:4px;letter-spacing:.08em;text-transform:uppercase}
+.section-title{font-size:11px;letter-spacing:.25em;text-transform:uppercase;color:var(--gold);margin-bottom:16px;display:flex;align-items:center;gap:10px}
+.section-title:after{content:'';flex:1;height:1px;background:linear-gradient(90deg,var(--border),transparent)}
+.calendar-grid{display:grid;grid-template-columns:repeat(7,1fr);gap:4px;margin-bottom:20px}
+.cal-header-cell{text-align:center;font-size:10px;letter-spacing:.1em;text-transform:uppercase;color:var(--gray-dark);padding:4px 0 8px}
+.cal-cell{background:var(--navy-mid);border:1px solid var(--border);border-radius:6px;padding:6px 4px;text-align:center;min-height:56px}
+.cal-cell.empty{background:transparent;border-color:transparent}
+.day-num{font-size:13px;font-weight:700;line-height:1}
+.shift-tag{font-size:8px;letter-spacing:.05em;text-transform:uppercase;margin-top:4px;border-radius:3px;padding:2px 4px;font-weight:600}
+.integral{border-color:rgba(201,164,74,.55)}.integral .day-num{color:var(--gold)}.integral .shift-tag{background:rgba(201,164,74,.15);color:var(--gold-light)}
+.parcial{border-color:rgba(245,158,11,.65)}.parcial .day-num{color:#fbbf24}.parcial .shift-tag{background:rgba(245,158,11,.2);color:#fde68a}
+.legend{display:flex;flex-wrap:wrap;gap:12px;margin-bottom:32px}
+.legend-item{display:flex;align-items:center;gap:6px;font-size:11px;color:var(--gray-dark)}
+.legend-dot{width:10px;height:10px;border-radius:3px;flex-shrink:0}
+.schedule{border:1px solid var(--border);border-radius:12px;overflow:hidden;background:var(--navy-mid)}
+.schedule-row{display:grid;grid-template-columns:150px 1fr 100px;gap:12px;padding:14px 16px;border-bottom:1px solid var(--border);align-items:center;font-size:12px}
+.schedule-row:last-child{border-bottom:0}
+.date{color:var(--gold-light);font-weight:700}
+.shift{color:var(--gray)}
+.hours{color:var(--white);font-family:'Orbitron',monospace;font-size:11px;text-align:right}
+.continuation{margin-top:16px;background:rgba(201,164,74,.06);border:1px solid var(--border);border-radius:10px;padding:14px 16px;color:var(--gray);font-size:12px;line-height:1.5}
+.continuation strong{color:var(--gold-light)}
+footer{text-align:center;padding:32px 16px 0;font-size:11px;color:var(--gray-dark);line-height:1.8}
+footer strong{color:var(--gray)}
+@media(max-width:560px){.calendar-grid{gap:2px}.cal-cell{min-height:52px;padding:5px 2px}.shift-tag{font-size:7px;padding:2px}.schedule-row{grid-template-columns:1fr auto;gap:5px}.shift{grid-column:1/-1;grid-row:2}.hours{grid-column:2;grid-row:1}}
+</style></head><body>
+<header><div class="header-tag">Hospital Ana Costa · Escala pessoal</div><h1>ESCALA DE PLANTÕES<br>NOVEMBRO 2026</h1><p>Dr. Vinícius Luzardi · LuzPerformance</p></header>
+<main>
+<div class="stat-row">
+<div class="stat-box"><div class="stat-num">4</div><div class="stat-label">Plantões</div></div>
+<div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Turnos de 12h</div></div>
+<div class="stat-box"><div class="stat-num">2</div><div class="stat-label">Turnos de 6h</div></div>
+<div class="stat-box"><div class="stat-num">36h</div><div class="stat-label">Carga total</div></div>
+</div>
+<div class="section-title">Calendário de Novembro</div>
+<div class="calendar-grid"><div class="cal-header-cell">Dom</div><div class="cal-header-cell">Seg</div><div class="cal-header-cell">Ter</div><div class="cal-header-cell">Qua</div><div class="cal-header-cell">Qui</div><div class="cal-header-cell">Sex</div><div class="cal-header-cell">Sáb</div><div class="cal-cell"><div class="day-num">1</div></div><div class="cal-cell"><div class="day-num">2</div></div><div class="cal-cell parcial"><div class="day-num">3</div><div class="shift-tag">13h–19h</div></div><div class="cal-cell"><div class="day-num">4</div></div><div class="cal-cell"><div class="day-num">5</div></div><div class="cal-cell"><div class="day-num">6</div></div><div class="cal-cell integral"><div class="day-num">7</div><div class="shift-tag">07h–19h</div></div><div class="cal-cell"><div class="day-num">8</div></div><div class="cal-cell"><div class="day-num">9</div></div><div class="cal-cell"><div class="day-num">10</div></div><div class="cal-cell"><div class="day-num">11</div></div><div class="cal-cell"><div class="day-num">12</div></div><div class="cal-cell"><div class="day-num">13</div></div><div class="cal-cell"><div class="day-num">14</div></div><div class="cal-cell"><div class="day-num">15</div></div><div class="cal-cell"><div class="day-num">16</div></div><div class="cal-cell parcial"><div class="day-num">17</div><div class="shift-tag">13h–19h</div></div><div class="cal-cell"><div class="day-num">18</div></div><div class="cal-cell"><div class="day-num">19</div></div><div class="cal-cell"><div class="day-num">20</div></div><div class="cal-cell integral"><div class="day-num">21</div><div class="shift-tag">07h–19h</div></div><div class="cal-cell"><div class="day-num">22</div></div><div class="cal-cell"><div class="day-num">23</div></div><div class="cal-cell"><div class="day-num">24</div></div><div class="cal-cell"><div class="day-num">25</div></div><div class="cal-cell"><div class="day-num">26</div></div><div class="cal-cell"><div class="day-num">27</div></div><div class="cal-cell"><div class="day-num">28</div></div><div class="cal-cell"><div class="day-num">29</div></div><div class="cal-cell"><div class="day-num">30</div></div><div class="cal-cell empty"></div><div class="cal-cell empty"></div><div class="cal-cell empty"></div><div class="cal-cell empty"></div><div class="cal-cell empty"></div></div>
+<div class="legend"><div class="legend-item"><div class="legend-dot" style="background:rgba(201,164,74,.65)"></div>Turno integral (07h–19h)</div><div class="legend-item"><div class="legend-dot" style="background:rgba(245,158,11,.7)"></div>Turno parcial (6h)</div></div>
+<div class="section-title">Escala detalhada</div>
+<section class="schedule" aria-label="Escala detalhada de novembro de 2026"><div class="schedule-row"><div class="date">Ter · 03/11</div><div class="shift">Plantão vespertino parcial</div><div class="hours">13h–19h</div></div><div class="schedule-row"><div class="date">Sáb · 07/11</div><div class="shift">Plantão diurno integral</div><div class="hours">07h–19h</div></div><div class="schedule-row"><div class="date">Ter · 17/11</div><div class="shift">Plantão vespertino parcial</div><div class="hours">13h–19h</div></div><div class="schedule-row"><div class="date">Sáb · 21/11</div><div class="shift">Plantão diurno integral</div><div class="hours">07h–19h</div></div></section>
+<aside class="continuation"><strong>Continuação de outubro:</strong> domingo, 01/11/2026 · plantão das 07h às 19h. Não entra na carga horária de novembro.</aside>
+</main>
+<footer><strong>Dr. Vinícius Luzardi · LuzPerformance</strong><br>Escala pessoal de plantões · Novembro de 2026</footer></body></html>

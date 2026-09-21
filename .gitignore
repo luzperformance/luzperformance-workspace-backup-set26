@@ -31,3 +31,17 @@ google_client_secret.json
 google_oauth_pending.json
 Luzperformance/new-leads/google_token.json
 Luzperformance/new-leads/last_notified_row.json
+
+# --- Runtime, caches e binários (não versionar) ---
+.local/
+lsp/
+.npm/
+.curator_backups/
+.mem0/
+runtime/
+terminal-sessions/
+verification_evidence.db
+work/cloudflared
+work/*.bin
+__pycache__/
+*.pyc

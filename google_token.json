@@ -1,0 +1,21 @@
+{
+  "token": "ya29.a0AdMD6EjgWYRpc-iqavzj1jonBQ6cMrUCRcClpIw17LSb2QWL0MsySBbhG2IGA6xUB-fpwSo5ONbsC17EHq1hHHIP7LZGWrfvX8XDkz30hZkfTRLpUhS8Gz54ABas139CS2gYhQE670tqNUq4r9r24K8R0HxV844gOjfl6uVRiZx7PstHdBgcde8c5iQLp-zfwd5v8WTVaCgYKAXcSARQSFQHGX2Mi8BQo6su_pdO2YmkBcMINzw0207",
+  "refresh_token": "1//030nEoBUB9RGvCgYIARAAGAMSNwF-L9IrUcKeVVw268ghS4UoDDBsli0TUFuAVB9j23-LQHbX8BWQqnak3qt16nqPiG_6JivDPvs",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "client_id": "1013389115640-lhqu3estla8a1dsqts8op67c458ub0eo.apps.googleusercontent.com",
+  "client_secret": "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",
+  "scopes": [
+    "https://www.googleapis.com/auth/calendar",
+    "https://www.googleapis.com/auth/contacts.readonly",
+    "https://www.googleapis.com/auth/documents",
+    "https://www.googleapis.com/auth/drive",
+    "https://www.googleapis.com/auth/gmail.modify",
+    "https://www.googleapis.com/auth/gmail.readonly",
+    "https://www.googleapis.com/auth/gmail.send",
+    "https://www.googleapis.com/auth/spreadsheets"
+  ],
+  "universe_domain": "googleapis.com",
+  "account": "",
+  "expiry": "2026-09-21T11:31:49.594514Z",
+  "type": "authorized_user"
+}

@@ -1,0 +1,49 @@
+COLA ISTO
+
+Treinar pesado não impede ninguém
+de piorar mentalmente.
+
+A conta aparece assim:
+rendimento cai, irritabilidade sobe
+e todo mundo chama de cansaço.
+
+O novo consenso do COI é claro:
+não é oito ou oitenta.
+
+Carga de treino, pressão por resultado,
+lesão, ambiente da equipe
+e momento de carreira pesam nisso.
+
+Não olha só para sono, fadiga e planilha.
+Olha humor, estresse e ansiedade também.
+
+O atleta pode estar entregando muito
+e já estar desandando por dentro.
+
+Queda de rendimento com mudança de humor
+não pede palpite. Pede investigação.
+
+Redução de danos é não esperar o atleta quebrar
+para começar a cuidar.
+
+Performance que custa saúde não é performance.
+Se isso está acontecendo, procure avaliação séria.
+Link da consultoria na bio.
+
+
+CAPTION
+
+Treinar mais não protege a cabeça.
+O consenso do COI de 2026 pede olhar além da carga, do sono e do resultado.
+Queda de rendimento com mudança de humor merece avaliação séria — consultoria no link da bio.
+
+
+EDIÇÃO FORA DO HEYGEN — NÃO COLAR NO ROTEIRO
+
+- Duração-alvo: 45–60 s. O briefing original tem 88 s e mistura A-roll, B-roll e pós; isso não deve entrar no Avatar IV.
+- A-roll: close contínuo, expressão neutra e focada. Legendas nativas ligadas.
+- Pós-produção sugerida: 0–4 s “TREINO ≠ SAÚDE MENTAL”; 5–13 s “QUEDA DE RENDIMENTO”; 14–24 s “CONSENSO COI 2026”; 25–35 s “CARGA • PRESSÃO • AMBIENTE”; 36–45 s “HUMOR • ESTRESSE • ANSIEDADE”; tela final “PERFORMANCE QUE CUSTA SAÚDE NÃO É PERFORMANCE”.
+- B-roll só na edição: atleta em reflexão, treino vazio, monitorização abstrata. Não pedir B-roll, grades, push-in ou montagem ao Avatar IV.
+- Direção completa de A-roll, B-roll, overlays, cortes e arte final: `15-saude-mental-esporte-elite-direcao-2026-09-18.md`.
+- Precisão: chamar o documento de “consenso do COI”, não de “diretriz”. A base e a checagem estão em `15-saude-mental-esporte-elite-source-2026-09-18.md`.
+- A foto recebida foi preservada em `assets/2026-09-18-referencia-saude-mental-esporte.jpg`. Ela usa fundo terracota e jaqueta oliva — visual diferente do master Roleta (close, fundo escuro, blazer). Não misturar os dois looks no mesmo lote sem decisão visual explícita.

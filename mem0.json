@@ -1,0 +1,27 @@
+{
+  "mode": "oss",
+  "user_id": "vinicius-luzardi",
+  "agent_id": "hermes",
+  "oss": {
+    "llm": {
+      "provider": "openai",
+      "config": {
+        "model": "gpt-5-mini",
+        "is_reasoning_model": true
+      }
+    },
+    "embedder": {
+      "provider": "openai",
+      "config": {
+        "model": "text-embedding-3-small",
+        "embedding_dims": 1536
+      }
+    },
+    "vector_store": {
+      "provider": "qdrant",
+      "config": {
+        "path": "/data/.hermes/mem0_qdrant"
+      }
+    }
+  }
+}

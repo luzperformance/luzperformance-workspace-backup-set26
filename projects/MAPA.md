@@ -13,6 +13,7 @@
 - `autoridade-clinica/` — estratégia editorial para consolidar autoridade clínica da Luz Performance antes de escalar conversão.
 - `pgvector-mem0/` — infraestrutura de memória compartilhada com PostgreSQL + pgvector.
 - `segundo-cerebro-secretaria-luzperformance/` — kit e plano de implantação do perfil operacional independente da secretária.
+- `migracao-openclaw/` — plano de migração da instalação pessoal do Hermes para o OpenClaw.
 
 ## Atualizar este mapa quando
 
